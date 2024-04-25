@@ -1,0 +1,29 @@
+{
+  "name": "pau_techblog89",
+  "version": "1.0.0",
+  "description": "create a forum",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul449/PAU_TechBlog89.git"
+  },
+  "author": "Paul Bilbatua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paul449/PAU_TechBlog89/issues"
+  },
+  "homepage": "https://github.com/Paul449/PAU_TechBlog89#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-session-sequelize": "^7.1.7",
+    "dotenv": "^16.4.5",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.3"
+  }
+}
