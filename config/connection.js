@@ -15,5 +15,7 @@ if(process.env.DB_URL){
         host:'localhost',
         dialect: 'postgres'
     }
-  )
+  );
 }
+
+module.exports = sequelize;
