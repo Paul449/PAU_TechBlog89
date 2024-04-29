@@ -1,0 +1,58 @@
+
+#Logout {
+    border: 3px solid green;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(160, 100%, 75%);
+    width:77px;
+}
+#Login {
+    border: 3px solid green;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background-color: #7FFFD4;
+    margin-bottom: 8px;
+    width:77px;
+}
+#Dashboard {
+    border: 3px solid green;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: #7FFFD4;
+    margin-bottom: 8px;
+    width:77px;
+}
+#Home {
+    border: 3px solid green;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #7FFFD4;
+    margin-bottom: 8px;
+    width:77px;
+}
+
+#title{
+    color: white;
+    border: 7px solid red;
+    display: inline-block;
+    background-color:#8B0000;
+    padding: 5px;
+    position: relative;
+    top: 45px;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    background-color: azure;
+    position: relative;
+    top: 90px;
+    display: block;
+}
