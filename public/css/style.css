@@ -43,7 +43,8 @@
     background-color:#8B0000;
     padding: 5px;
     position: relative;
-    top: 45px;
+    top: 20px;
+    margin-bottom: 3%;
 }
 
 body{
@@ -51,14 +52,17 @@ body{
 }
 
 .container{
-    background-color: azure;
-    position: relative;
-    top: 90px;
+    background-color:#8A2BE2 ;
+    padding: 15%;
     display: block;
+    margin-left: 2%;
+    margin-right:2%;
+    margin-top: 2%;
 }
 
 .header{
     background-color: black;
+    position: relative;
 }
 
 .navigation-bar{
