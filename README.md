@@ -28,7 +28,7 @@ N/A
 
 # Deployment
 
-Heroku:()
+Render:()
 
 # Github Repo
 
