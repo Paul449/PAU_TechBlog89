@@ -1,21 +1,24 @@
 /*Importing useful libraries */
-const PATH = require('path');
+const path = require('path');
 const express = require('express');
-const session = require('express-session');
+//const session = require('express-session');
 const exphbs = require('express-handlebars');
 //import sequelize connection
-const sequelize = require('./config/connection');
+//const sequelize = require('./config/connection');
 //port number
-const PORT = 3002;
+const PORT = process.env.PORT||3002;
+const hbs = exphbs.create()
 //calling express in our app
 const app = express();
-//handlebars reference to app
-app.engine('main',require('ejs').renderFile)
+//view engine setup
+app.engine('handlebars', require('ejs').renderFile);
 //render handlebar template
-app.get('/',async(req,res)=>{
-    res.render('main.handlebars')
+app.get('/',(req,res)=>{
+    res.render('./layout/main.handlebars')
 });
+//
+app.use(express.static(path.join(__dirname, '/public')));
 //listening through port 3002
-app.listen(PORT,async()=>{
+app.listen(PORT,()=>{
     console.log(`listening on port ${PORT}`)
 });

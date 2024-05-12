@@ -13,7 +13,6 @@ const sequelize = process.env.DB_URL
     {
         host:process.env.DB_HOST,
         dialect:'postgres',
-        port:process.env.DB_PORT,
     }
 );
 //testing connection with database, using authenticate
