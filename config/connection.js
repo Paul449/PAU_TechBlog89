@@ -17,11 +17,13 @@ const sequelize = process.env.DB_URL
     }
 );
 //testing connection with database, using authenticate
-try{
-    await sequelize.authenticate(); // test connection
-    console.log("Your connection to database is stable");
-} catch(error){ //throw error if unable to connect
-    console.error('Your connection is unstable:', error);
-}
+const TestConnection = async()=>{
+    try{
+        await sequelize.authenticate(); // test connection
+        console.log("Your connection to database is stable");
+    } catch(error){ //throw error if unable to connect
+        console.error('Your connection is unstable:', error);
+    }
+};
 //exporting sequelize database connection to use with models
 module.exports = sequelize;
