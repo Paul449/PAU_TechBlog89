@@ -9,16 +9,18 @@
     </head>
     <body>
         <header>
-            <h1 id="title">TechBlog CMS-style</h1>
+            <h1 id="title">{{title}}</h1>
         </header>
             <ul class="navBar">
-               <p id="Home">Home</p>
-               <p id="Dashboard">Dashboard</p>
-               <p id="Login">Login</p>
-               <p id="Logout">Logout</p>
+                <a id="Home" href="/">Home</a>
+                {{#if loggedIn}}
+                <a id="Dashboard" href="/Dashboard">Dashboard</a>
+                {{else}}
+                <a id="Logout" href="/Logout">Logout</a>
+                {{/if}}
             </ul>
         <main class="main">
-            
+            {{body}}
         </main>
     </body>
 </html>
