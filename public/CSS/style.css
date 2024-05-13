@@ -1,0 +1,87 @@
+header{
+    border: 5px solid blue;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+
+.navBar{
+    border: 5px solid gray;
+    padding: 1%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: #D8BFD8;
+}
+
+#Home{
+
+    border: 5px solid #F0F8FF;
+    margin-right: 3%;
+    padding: 10px;
+}
+
+#Dashboard{
+
+    border: 5px solid #F0F8FF;
+    margin-right: 3%;
+    padding:10px;
+}
+
+#Login{
+
+    border: 5px solid #F0F8FF;
+    margin-right: 3%;
+    padding:10px;
+}
+
+#Logout{
+
+    border: 5px solid #F0F8FF;
+    padding:10px;
+}
+
+/*hovers*/
+
+#Home:hover{
+    background-color: grey;
+    text-decoration: underline;
+}
+
+#Dashboard:hover{
+    background-color: grey;
+    text-decoration: underline;
+}
+
+#Login:hover{
+    background-color: grey;
+    text-decoration: underline;
+}
+
+#Logout:hover{
+    background-color: grey;
+    text-decoration: underline;
+}
+
+/*active*/
+
+#Home:active{
+    box-shadow: 5px 5px #666;
+    
+}
+
+#Dashboard:active{
+    box-shadow: 5px 5px #666;
+}
+
+#Login:active{
+    box-shadow: 5px 5px #666;
+}
+
+#Logout:active{
+    box-shadow: 5px 5px #666;
+}

@@ -7,17 +7,18 @@ const exphbs = require('express-handlebars');
 //const sequelize = require('./config/connection');
 //port number
 const PORT = process.env.PORT||3002;
-const hbs = exphbs.create()
 //calling express in our app
 const app = express();
+//look for static files on directory (css)
+app.use(express.static('public'));
+const hbs = exphbs.create({})
 //view engine setup
+app.set('views',path.join(__dirname,'views'))
 app.engine('handlebars', require('ejs').renderFile);
 //render handlebar template
 app.get('/',(req,res)=>{
     res.render('./layout/main.handlebars')
 });
-//
-app.use(express.static(path.join(__dirname, '/public')));
 //listening through port 3002
 app.listen(PORT,()=>{
     console.log(`listening on port ${PORT}`)
