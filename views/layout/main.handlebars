@@ -13,11 +13,9 @@
         </header>
             <ul class="navBar">
                 <a id="Home" href="/">Home</a>
-                {{#if loggedIn}}
                 <a id="Dashboard" href="/Dashboard">Dashboard</a>
-                {{else}}
+                <a id="Login" href="/Login">Login</a>
                 <a id="Logout" href="/Logout">Logout</a>
-                {{/if}}
             </ul>
         <main class="main">
             {{body}}

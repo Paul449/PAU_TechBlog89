@@ -19,6 +19,15 @@ app.engine('handlebars', require('ejs').renderFile);
 app.get('/',(req,res)=>{
     res.render('./layout/main.handlebars')
 });
+app.get('/Dashboard',(req,res)=>{
+    res.render('./Dashboard.handlebars')
+});
+app.get('/Login',(req,res)=>{
+    res.render('./Login.handlebars')
+});
+app.get('/sign-up',(req,res)=>{
+    res.render('/signUp.handlebars')
+});
 //listening through port 3002
 app.listen(PORT,()=>{
     console.log(`listening on port ${PORT}`)
