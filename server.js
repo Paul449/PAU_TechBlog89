@@ -22,12 +22,27 @@ app.get('/',(req,res)=>{
 app.get('/Dashboard',(req,res)=>{
     res.render('./Dashboard.handlebars')
 });
+
 app.get('/Login',(req,res)=>{
     res.render('./Login.handlebars')
 });
+
 app.get('/sign-up',(req,res)=>{
     res.render('/signUp.handlebars')
 });
+app.get('/newPost',(req,res)=>{
+    res.render('newPost.handlebars')
+});
+app.get('/EditPost',(req,res)=>{
+    res.render('EditPost.handlebars')
+});
+app.get('/Homepage',(req,res)=>{
+    res.render('Homepage.handlebars')
+});
+app.get('/SinglePost',(req,res)=>{
+    res.render('SinglePost.handlebars')
+});
+
 //listening through port 3002
 app.listen(PORT,()=>{
     console.log(`listening on port ${PORT}`)
