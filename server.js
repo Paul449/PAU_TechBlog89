@@ -34,7 +34,7 @@ app.get('/newPost',(req,res)=>{
     res.render('newPost.handlebars')
 });
 app.get('/EditPost',(req,res)=>{
-    res.render('EditPost.handlebars')
+    res.render('UpdatePost.handlebars')
 });
 app.get('/Homepage',(req,res)=>{
     res.render('Homepage.handlebars')
